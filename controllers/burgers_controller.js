@@ -13,32 +13,31 @@ var burger = require('../models/burger.js');
 // 	res.redirect("/index");
 // });
 
+
 router.get("/", function(req, res) {
-	// burger.selectAll(function(data) {
-	// 	var hbsObject = {
-	// 		burgers: data
-	// 	};
-	// 	console.log(hbsObject);
-	// 	res.render("index", hbsObject);
-	// });
-	console.log('hello');
-	res.send('hello');
+	burger.selectAll(function(data) {
+		var hbsObject = {
+			burgers: data
+		};
+		// console.log(hbsObject);
+		res.render("index", hbsObject);
+	});
 });
 
-// Create New Burger
-// router.post("/new", function(req, res) {
-// 	burger.insertOne(req.body.burger_name, function() {
-// 		res.redirect("/index");
-// 	});
-// });	
+//Create New Burger
+router.post("/new", function(req, res) {
+	burger.insertOne(req.body.burger_name, function() {
+		res.redirect("/");
+	});
+});	
 
 // // Eat The Burger
 
-// router.post("/eat/:id", function(req,res) {
-// 	burger.updateOne(req.params.id, function() {
-// 		res.redirect("/index");
-// 	});
-// });
+router.post("/eat/:id", function(req,res) {
+	burger.updateOne(req.params.id, function() {
+		res.redirect("/");
+	});
+});
 
 // Export router
 module.exports = router;
