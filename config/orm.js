@@ -18,38 +18,37 @@ var orm = {
 
 		// Create time stamp
 	    var d = new Date();
-	    var timestamp = ''+ d.getFullYear() + '-'; // must be string
-	    var month = '' + (d.getMonth() + 1); // must be string
+	    var timestamp = ''+ d.getFullYear() + '-'; 
+	    var month = '' + (d.getMonth() + 1);
 	      // handle 1 digit months
 	      if(month.length == 1){
 	        month = '0' + month;
 	      }
 	    timestamp += month + '-';
-	    var day = '' + d.getDate(); // must be string
+	    var day = '' + d.getDate();
 	      // handle 1 digit day of month
 	      if(day.length == 1){
 	        day = '0' + day;
 	      }
 	    timestamp += day + ' ';
-	    var hour = '' + d.getHours(); // must be string
+	    var hour = '' + d.getHours();
 	      // handle 1 digit hour
 	      if(hour.length == 1){
 	        hour = '0' + hour;
 	      }
 	    timestamp += hour + ':';
-	    var minute = '' + d.getMinutes(); // must be string
+	    var minute = '' + d.getMinutes();
 	      // handle 1 digit minute
 	      if(minute.length == 1){
 	        minute = '0' + minute;
 	      }
 	    timestamp += minute + ':';
-	    var second = '' + d.getSeconds(); // must be string
+	    var second = '' + d.getSeconds(); 
 	      // handle 1 digit second
 	      if(second.length == 1){
 	        second = '0' + second;
 	      }
 	    timestamp += second;
-	    // ----------------------------------------------------------
 
 	    // Run MySQL Query
 	    connection.query('INSERT INTO burgers SET ?', {

@@ -1,18 +1,9 @@
 
 var express = require('express');
 var router = express.Router();
+
 // Import burgers.js 
 var burger = require('../models/burger.js');
-
-
-// Create all routes
-
-// Create index redirect
-
-// router.get("/", function(req, res) {
-// 	res.redirect("/index");
-// });
-
 
 router.get("/", function(req, res) {
 	burger.selectAll(function(data) {
@@ -32,7 +23,6 @@ router.post("/new", function(req, res) {
 });	
 
 // // Eat The Burger
-
 router.post("/eat/:id", function(req,res) {
 	burger.updateOne(req.params.id, function() {
 		res.redirect("/");

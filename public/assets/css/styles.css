@@ -13,16 +13,6 @@ h1 img {
 	width: 32%;
 }
 
-/*.title {
-  color: #e40020;
-  font-size: 25px;
-  font-family: 'Satisfy', cursive;
-  background-color: #edf409;
-  width: 30%;
-  height:30%;
-  margin:2px;
-}
-*/
 .title {
   color: #e40020;
   font-size: 25px;
@@ -42,12 +32,6 @@ h1 img {
   box-shadow: 2px 2px 4px #888;
 
 }
-/*.order-title {
-	color: #e40020;
-	font-size: 30px;
-  font-family: 'Satisfy', cursive;
-}*/
-
 
 .order-title {
   color: #e40020;

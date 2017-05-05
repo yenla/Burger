@@ -8,10 +8,9 @@ var routes = require('./controllers/burgers_controller');
 var app = express();
 
 
-// Serve static content for the app from the "public" directory in the application directory.
+// Serve static contents
 app.use(express.static(process.cwd() + "/public"));
 
-// Parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // Override with POST having ?_method=DELETE
