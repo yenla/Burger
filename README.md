@@ -1,5 +1,7 @@
 # :hamburger: :fries: Burger-HW
 
+<img width="1201" alt="screen shot 2017-05-05 at 3 47 27 pm" src="https://cloud.githubusercontent.com/assets/9157149/25767620/fe8783e0-31af-11e7-8f3c-902dc374a65d.png">
+
 ## Summary
 
 • Welcome to Bob's Burger, order your burger from our menu of the day or create your own. Once you finish ordering your burger, you can enjoy your meal by clicking devour it. Enjoys your meal!!!
