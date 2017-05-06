@@ -63,7 +63,7 @@ Follow the steps below to interact with this site locally using the example data
 • Below is example code on how to create your route
 
 	router.get("/", function(req, res) {
-	burger.selectAll(function(data) {
+		burger.selectAll(function(data) {
 			var hbsObject = {
 				burgers: data
 			};
