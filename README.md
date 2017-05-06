@@ -1,6 +1,6 @@
 # :hamburger: :fries: Burger-HW
 
-<img width="1201" alt="screen shot 2017-05-05 at 3 47 27 pm" src="https://cloud.githubusercontent.com/assets/9157149/25767620/fe8783e0-31af-11e7-8f3c-902dc374a65d.png">
+<img width="1195" alt="screen shot 2017-05-06 at 10 27 48 am" src="https://cloud.githubusercontent.com/assets/9157149/25774570/c60d0cd2-3246-11e7-873a-c507029dba23.png">
 
 ## Summary
 
